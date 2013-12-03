@@ -1,0 +1,34 @@
+$base-color: #996600;
+$base-gradient:'flat';
+$active-color: #FFFF99;
+
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
+
+@import 'custom/button';
+@import 'custom/icons';
+
+.login-background{
+	background-image:url('../images/bg.jpg');
+}
+
+
+
+.mobile-photo-list-item{
+	padding:5px;
+	.mobile-photo-list-img{
+		display: inline-block;
+		width: 200px;
+		height: 125px;
+		background-repeat: no-repeat;
+	
+	}
+}

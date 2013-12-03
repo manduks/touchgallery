@@ -1,0 +1,24 @@
+@include sencha-button-ui('btn-login-ui', #FFFF99, 'flat');
+@include sencha-button-ui('btn-add-ui', #664400, 'flat');
+
+@mixin custom-button($color){
+	@include transition(all .25s ease);
+	@include border-radius(6px);
+
+	margin-bottom:2px;
+	font-size:16px;
+	background:$color;
+	border: none;
+	color: #FFF;
+	text-decoration:none;
+	.x-button-label{
+		padding: 10px 0;
+	}
+	&.x-button-pressing{
+		background:darken($color,10);
+	}
+}
+
+.btn-default{
+	@include custom-button(#34495E);
+}
